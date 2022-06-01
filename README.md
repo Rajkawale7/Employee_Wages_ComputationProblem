@@ -14,4 +14,9 @@ UC5 ::: Calculate Wages till a condition of total working hours of 160 or max da
 
 UC6 :::
 
+UC7 :::
+
+UC8 :::
+
+UC9 :::
 ----------------------------------------------------------------------------
