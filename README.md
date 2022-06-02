@@ -12,6 +12,15 @@ UC4 ::: Calculating Wages for a Month assuming 20 Working Days in a Month.
 
 UC5 ::: Calculate Wages till a condition of total working hours of 160 or max days of 20 is reached for a month.
 
-UC6 :::
+UC6 ::: Store the Daily Wage along with the Total Wage - Save in an Array the Daily wage.
 
+UC7 ::: Use the Daily Wage Array perform following operations using Array Helper Functions
+
+UC8 ::: Store the Day and the Daily Wage along with the Total Wage - Use Map to store Day wise Wage
+
+UC9 ::: Use the Daily Wage Map and Daily Hour Map perform following operations using Arrow Functions: ->
+  a. Calc total Wage and total hours worked
+  b. Show the full workings days, part working days and
+  no working days
+  
 ----------------------------------------------------------------------------
