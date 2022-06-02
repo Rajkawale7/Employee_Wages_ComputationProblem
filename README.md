@@ -19,8 +19,13 @@ UC7 ::: Use the Daily Wage Array perform following operations using Array Helper
 UC8 ::: Store the Day and the Daily Wage along with the Total Wage - Use Map to store Day wise Wage
 
 UC9 ::: Use the Daily Wage Map and Daily Hour Map perform following operations using Arrow Functions: ->
-  a. Calc total Wage and total hours worked
+
+  a. Calc total Wage and total hours worked.
+  
   b. Show the full workings days, part working days and
-  no working days
+  
+  c. no working days
+  
+ UC10 ::: Ability to store the Day, Hours Worked and Wage Earned in a single object.
   
 ----------------------------------------------------------------------------
