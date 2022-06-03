@@ -1,6 +1,6 @@
-//======================================== UC 10 =======================================================================//
- {   
-    /* Ability to store the Day, Hours Worked and Wage Earned in a single object. */
+//======================================== UC 11 =======================================================================//
+ 
+    /* Using Object funtions along with Arrow Functions */
     //Declaring the variables accordingly condition
     const IS_ABSENT = 0;
     const IS_FULL_TIME = 1;
@@ -53,6 +53,38 @@
             }
         );
     }
+//=====================================================================================//
+
+    // 11A:- Calculate total wage and total hours worked
+    let totalWages = empDailyHrsAndWageArr
+        .filter(dailyHrsAndWage => dailyHrsAndWage.dailyWage > 0)
+        .reduce((totalWages, dailyHrsAndWage) => totalWages += dailyHrsAndWage, 0);
+
+    let totalHours = empDailyHrsAndWageArr
+        .filter(dailyHrsAndWage => dailyHrsAndWage.dailyWage > 0)
+        .reduce((totalHours, dailyHrsAndWage) => totalHours += dailyHrsAndWage.dailyHours, 0);
+
+    console.log("UC 11A :- Total Hours: " + totalHours + " & " + "Total Wages: " + totalWages);
+
+    // 11B:- Show the full Working Days using foreach
+
+    process.stdout.write("UC 11B: Logging full work days.");
+
+    empDailyHrsAndWageArr
+        .filter(dailyHrsAndWage => dailyHrsAndWage.dailyHours == 8)
+        .forEach(dailyHrsAndWage => process.stdout.write(dailyHrsAndWage.toString()));
+
+    // 11C - Show Part working days using Map by reducing to string array
+    let partWorkingDayStrArr = empDailyHrsAndWageArr
+        .filter(dailyHrsAndWage => dailyHrsAndWage.dailyHours ==4)
+        .map(dailyHrsAndWage => dailyHrsAndWage.toString());
+
+    console.log("\nUC 11C PartWorking DayStrings:  " + partWorkingDayStrArr);
+
+    //11D - No working days ony using Map function
+    let nonWorkingDayNums =  empDailyHrsAndWageArr
+        .filter(dailyHrsAndWage => dailyHrsAndWage.dailyHours == 0)
+        .map(dailyHrsAndWage => dailyHrsAndWage.dayNum);
     
-    console.log("UC 10 Showing Daily Hours Worked and Wage Earned: " + empDailyHrsAndWageArr);
-}
+    console.log("UC 11D NonWorkingDayNums: " + nonWorkingDayNums);
+
