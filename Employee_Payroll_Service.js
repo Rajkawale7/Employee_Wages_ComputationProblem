@@ -22,8 +22,13 @@ class EmployeePayrollData
         return this._name;
     }
     set name(name) {
-        this._name=name;
+        let nameRegex = RegExp ('^[A-Z]{1}[a-z]{3,}$');     //Use of Regex To check and validate
+        if (nameRegex.test(name))
+        this._name = name;
+        else throw "Name is Incorrect!";
     }
+
+    //Method
     toString() {
         const options= { year:'numeric', month: 'long', day: 'numeric'};
         const empDate= this.startDate === undefined ? "undefined": 
