@@ -20,12 +20,27 @@ UC8 ::: Store the Day and the Daily Wage along with the Total Wage - Use Map to 
 
 UC9 ::: Use the Daily Wage Map and Daily Hour Map perform following operations using Arrow Functions: ->
 
-  a. Calc total Wage and total hours worked.
+    **a. Calc total Wage and total hours worked.
   
-  b. Show the full workings days, part working days and
+    **b. Show the full workings days, part working days and
   
-  c. no working days
+    **c. no working days
   
  UC10 ::: Ability to store the Day, Hours Worked and Wage Earned in a single object.
+ 
+ UC11 :::  Perform following Object operations using Arrow Functions::
+ 
+    **a. Calc total Wage and total hours worked
+
+    **b. Show the full workings days using foreach
+
+    **c. Show Part working days using Map by reducing to String Array
+
+    **d. No working days only using Map function
   
 ----------------------------------------------------------------------------
+#Employee Payroll Servce
+
+UC12 :::  Ability to createEmployee Payroll Data with id, name and salary and to store gender and start date
+
+UC13 ::: Ability to check the name starts with capital and has at least 3 characters - Use Regex Pattern - Use Try Catch in case of Error.
